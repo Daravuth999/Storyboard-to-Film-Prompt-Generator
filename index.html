@@ -1,0 +1,45 @@
+You are a master screenwriter, film director, and cinematographer with feature-animation experience (Pixar/Disney caliber). I am uploading a ZIP of storyboard frames. Each image is one scene, in story order. Your job is to turn them into a set of video-generation prompts that I will give to an animation agent, one clip per frame. When the clips are joined, they must play as one seamless film, not separate episodes.
+
+SETTINGS (edit these)
+- Clip length per scene: [10 seconds]
+- Visual style: [painterly feature-film 3D animation in the style of Pixar and Disney, cinematic color grading]
+- Aspect ratio and frame rate: [16:9, 24fps]
+
+STEP 1: ANALYZE THE ZIP
+1. Unzip the file and list every image. Sort them by filename order (scene01, scene02, and so on). If the names do not show a clear order, tell me your assumed order before continuing.
+2. Open and study every frame. For each, note the characters, costumes, props, setting, time of day, lighting, color palette, emotional tone, camera angle, and each character's position in the frame.
+3. Read the whole sequence and work out the story: the setup, the conflict, the turning point, the climax, and the resolution. Use the filenames as hints, but trust what the images show.
+
+STEP 2: BUILD A CONTINUITY BIBLE (show it to me first, briefly)
+- Character sheet: a fixed one-line visual description of each recurring character (colors, costume, props, silhouette). Reuse this description word for word in every prompt so the characters never drift.
+- Style rules: one fixed style line, palette progression across the story (for example warm, then stormy, then warm again), and lighting direction.
+- Story arc: 3 to 5 sentences covering the beginning, middle, and end of the story.
+- Continuity flags: list any inconsistencies you spot between frames (costume colors that change, props that appear or vanish, borders or frames on some images, and so on) and say how you will handle each one.
+
+STEP 3: WRITE ONE PROMPT PER SCENE
+For each frame, write one standalone, copy-paste-ready prompt, in order. Every prompt must:
+- Tell the animation agent to use the attached reference image as the exact opening frame.
+- Include the fixed style line and the character descriptions from the bible.
+- Specify the camera work (shot size, angle, and movement such as crane, dolly, orbit, whip-pan, rack focus, or tracking) and vary it from scene to scene so each scene stands out.
+- Describe the action as a clear sequence of beats that fits the clip length. Describe the beats in plain language without writing timestamps.
+- Give the lighting and atmosphere (sky, haze, particles, wind, dust, light rays).
+- State the final moment of the clip. It must match, in pose, position, direction of motion, and lighting, the opening frame of the next scene, so the cut or dissolve between clips is seamless. Plan transitions as match cuts, whip-pans, smoke or light wipes, or push-ins.
+- End with a short negative line (no text, no logos, no extra characters, no style drift, no flicker, no face morphing, and anything else relevant).
+- The last scene must resolve the story and end on a held final image that fades out.
+
+STEP 4: FORMAT RULES (strict)
+- Put each scene's prompt in its own separate code block so I can copy it with one tap.
+- Above each code block, write only: "Attach: [filename]".
+- Do NOT put scene numbers, timestamps, or phrases like "scene 3 of 12" inside any prompt. The animation agent must not see them. The prompts must read as pure creative direction.
+- Do NOT combine multiple scenes into one prompt.
+- Keep every prompt self-contained, since the animation agent will not remember the previous ones.
+
+STEP 5: FINAL CHECK
+Before replying, verify that (a) every frame has exactly one prompt, (b) every prompt's final moment hands off to the next prompt's opening frame, (c) the character descriptions are identical across prompts, (d) the style and palette progression are consistent, and (e) the story has a clear beginning, build-up, climax, and resolution. Fix any problem before you answer.
+
+OUTPUT ORDER
+1. A short story summary and the continuity bible.
+2. The per-scene prompts, each in its own code block with its "Attach:" line.
+3. A brief list of continuity flags and how I can fix them.
+
+If you can also generate the video clips, ask me for confirmation after the prompts, then generate them one at a time in order, using each clip's last frame as a reference for the next.
